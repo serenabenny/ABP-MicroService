@@ -2,6 +2,7 @@
 #### Project Description
 A background management framework based on the ABP vNext microservice architecture and vue-element-admin, suitable for large-scale distributed business systems and enterprise backends, and can also integrate various small programs, e-commerce backends and business middle offices.
 
+**Vue3 https://github.com/WilliamXu96/abp-vue-next-admin**
 
 **GitHub: https://github.com/WilliamXu96/ABP-MicroService/**
 
@@ -9,7 +10,7 @@ A background management framework based on the ABP vNext microservice architectu
 
 **Blog address:** [Blog Park](https://www.cnblogs.com/william-xu/)
 
-**Video address:** [bilibili](https://space.bilibili.com/702776220/channel/seriesdetail?sid=604812)
+**Video address:** **[YouTube](https://www.youtube.com/@opencodes)** | [bilibili](https://space.bilibili.com/702776220/channel/seriesdetail?sid=604812)
 
 **Quick Start:**
 Run the script in the run directory
@@ -29,7 +30,8 @@ Run the script in the run directory
 - Tenant management
 - User management
 - Role management
-- organization
+- Menu management
+- Organization
 - Dictionary management
 - Job management
 - Operation log
@@ -38,6 +40,7 @@ Run the script in the run directory
 - Storage management
 - Code generation
 - Process management
+- report print
 #### TODO:
 - Data permission
 #### System Preview

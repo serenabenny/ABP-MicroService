@@ -84,9 +84,13 @@ namespace BaseService.EntityFrameworkCore
                 b.ConfigureByConvention();
 
                 b.Property(x => x.Name).IsRequired().HasMaxLength(BaseServiceConsts.MaxNameLength);
-                b.Property(x => x.Route).IsRequired().HasMaxLength(BaseServiceConsts.MaxNotesLength);
-                b.Property(x => x.Permission).IsRequired().HasMaxLength(BaseServiceConsts.MaxNotesLength);
-                b.Property(x => x.Icon).IsRequired().HasMaxLength(BaseServiceConsts.MaxFullNameLength);
+                b.Property(x => x.Path).HasMaxLength(BaseServiceConsts.MaxNotesLength);
+                b.Property(x => x.Component).HasMaxLength(BaseServiceConsts.MaxNotesLength);
+                b.Property(x => x.Permission).HasMaxLength(BaseServiceConsts.MaxNotesLength);
+                b.Property(x => x.Icon).HasMaxLength(BaseServiceConsts.MaxFullNameLength);
+                b.Property(x => x.Label).IsRequired().HasMaxLength(BaseServiceConsts.MaxFullNameLength);
+                b.Property(x => x.Title).HasMaxLength(BaseServiceConsts.MaxFullNameLength);
+                b.Property(x => x.IsHost).HasDefaultValue(false);
             });
 
             builder.Entity<RoleMenu>(b =>

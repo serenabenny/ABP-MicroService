@@ -15,8 +15,10 @@ namespace BaseService.Systems.MenuManagement
 
         Task<MenuDto> Update(Guid id, CreateOrUpdateMenuDto input);
 
-        Task<PagedResultDto<MenuDto>> GetAll(GetMenuInputDto input);
+        Task<ListResultDto<MenuDto>> GetAll(GetMenuInputDto input);
 
         Task<MenuDto> Get(Guid id);
+
+        Task<ListResultDto<MenuDto>> LoadAll(Guid? id);
     }
 }
